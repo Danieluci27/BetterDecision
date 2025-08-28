@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background = "@drawable/backimage">
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="360dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:text="Would you like saving your result?"
+        android:textColor="#ffffff"
+        android:textSize="35dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/question"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginBottom="30dp">
+
+        <ImageButton
+            android:id="@+id/yes"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="70dp"
+            app:srcCompat="@drawable/ic_prediction"
+            tools:ignore="NotSibling" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/question"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginBottom="30dp">
+
+        <ImageButton
+            android:id="@+id/no"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_below="@id/question"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="70dp"
+            app:srcCompat="@drawable/ic_no"
+            tools:ignore="NotSibling" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

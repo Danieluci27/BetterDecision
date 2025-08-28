@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity = "center"
+    android:background = "@drawable/prediction"
+    >
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/et_text_factor1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:text="What do you want to predict?"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp" />
+
+    <EditText
+        android:id="@+id/et_text_factor1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/textView5"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Type your Answer"
+        android:inputType="textPersonName"
+        android:textColor="#000000"
+        android:textStyle = "bold"/>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="40dp"
+        android:text="You will predict based on"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
+        />
+
+    <EditText
+        android:id="@+id/et_text_factor2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView5"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Type your Answer"
+        android:inputType="textPersonName"
+        android:textStyle = "bold"/>
+
+    <ImageButton
+        android:id="@+id/button_next1"
+        android:layout_width="70dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/et_text_factor2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:src="@drawable/ic_nextppart" />
+    >
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/validation_3">
+
+    <EditText
+        android:id="@+id/confidence_interval"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/textView10"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="#ffffff"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="155dp"
+        android:layout_marginTop="70dp"
+        android:text=" Result"
+        android:textColor="#ffffff"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/textView7"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:text="Your claim is found out to be true"
+        android:textColor="#ffffff"
+        android:textSize="30sp"
+        android:textStyle="italic" />
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/backToHome"
+        android:layout_centerHorizontal="true"
+        android:text="SAVE THE RESULT"
+        android:textSize="25dp" />
+
+    <Button
+        android:id="@+id/backToHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/confidence_interval"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:text="BACK TO HOME"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/textView6"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:text="   [least diff, biggest diff]"
+        android:textColor="#ffffff"
+        android:textSize="26sp" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/textView10"
+        android:layout_marginTop="30dp"
+        android:layout_toLeftOf="@id/confidence_interval"
+        android:text="         ="
+        android:textSize="30sp"
+        android:textColor = "#ffffff"/>
+
+
+</RelativeLayout>

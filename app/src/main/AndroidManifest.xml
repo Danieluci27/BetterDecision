@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myapplication">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Better Decision"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApplication">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <receiver android:name = ".AlarmReceiver" android:exported = "true">
+            <intent-filter>
+                <action android:name = "com.alarmreceiver.0" />
+                <action android:name = "com.alarmreceiver.1" />
+                <action android:name = "com.alarmreceiver.2"/>
+                <action android:name = "com.alarmreceiver.3" />
+                <action android:name = "com.alarmreceiver.4" />
+                <action android:name = "com.alarmreceiver.5" />
+                <action android:name = "com.alarmreceiver.6" />
+                <action android:name = "com.alarmreceiver.7" />
+                <action android:name = "com.alarmreceiver.8" />
+                <action android:name = "com.alarmreceiver.9" />
+
+
+            </intent-filter>
+
+
+        </receiver>
+
+        <receiver android:name = ".AlarmReceiverforHT" android:exported = "true" >
+            <intent-filter>
+                <action android:name = "com.alarmreceiverforHT.0" />
+                <action android:name = "com.alarmreceiverforHT.1" />
+                <action android:name = "com.alarmreceiverforHT.2" />
+                <action android:name = "com.alarmreceiverforHT.3" />
+                <action android:name = "com.alarmreceiverforHT.4" />
+                <action android:name = "com.alarmreceiverforHT.5" />
+                <action android:name = "com.alarmreceiverforHT.6" />
+                <action android:name = "com.alarmreceiverforHT.7" />
+                <action android:name = "com.alarmreceiverforHT.8" />
+                <action android:name = "com.alarmreceiverforHT.9" />
+
+            </intent-filter>
+
+
+        </receiver>
+
+        <activity android:name=".SubActivity"/>
+        <activity android:name=".ThirdActivity" android:exported = "true" >
+            <intent-filter>
+                <action android:name = "com.getIt.0" />
+                <action android:name = "com.getIt.1" />
+                <action android:name = "com.getIt.2" />
+                <action android:name = "com.getIt.3" />
+                <action android:name = "com.getIt.4" />
+                <action android:name = "com.getIt.5" />
+                <action android:name = "com.getIt.6" />
+                <action android:name = "com.getIt.7" />
+                <action android:name = "com.getIt.8" />
+                <action android:name = "com.getIt.9" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".FourthActivity"/>
+        <activity android:name=".ResultsActivity"/>
+        <activity android:name=".FifthActivity"/>
+        <activity android:name=".VFirstActivity"/>
+        <activity android:name=".HypothesisActivity"/>
+        <activity android:name=".DataActivity" android:exported = "true">
+            <intent-filter>
+                <action android:name = "com.dataActivity.0" />
+                <action android:name = "com.dataActivity.1" />
+                <action android:name = "com.dataActivity.2" />
+                <action android:name = "com.dataActivity.3" />
+                <action android:name = "com.dataActivity.4" />
+                <action android:name = "com.dataActivity.5" />
+                <action android:name = "com.dataActivity.6" />
+                <action android:name = "com.dataActivity.7" />
+                <action android:name = "com.dataActivity.8" />
+                <action android:name = "com.dataActivity.9" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".RandomActivity"/>
+        <activity android:name=".NotificationActivity"/>
+        <activity android:name=".CIResultActivity"/>
+        <activity android:name=".RandomDataActivity" />
+        <activity android:name=".WrongActivity"/>
+        <activity android:name=".NotificationActivity_1"/>
+    </application>
+        <uses-permission android:name="android.permission.WAKE_LOCK" />
+</manifest>

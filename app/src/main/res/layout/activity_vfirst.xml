@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/backimage"
+    tools:ignore="ExtraText">
+
+    <TextView
+        android:id="@+id/theme"
+        android:layout_width="180dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="Choose the scenario"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="30dp"
+        android:textAllCaps = "true"/>
+
+    <ImageButton
+        android:id="@+id/theme_button"
+        android:layout_width="360dp"
+        android:layout_height="180dp"
+        android:layout_below="@id/theme"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/calcium_consume" />
+
+    <TextView
+        android:id="@+id/theme_1"
+        android:layout_width="360dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/theme_button"
+        android:layout_centerHorizontal="true"
+        android:text="Is my average calcium consume below national average?"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:textStyle="italic" />
+
+    <ImageButton
+        android:id="@+id/theme_button_2"
+        android:layout_width="360dp"
+        android:layout_height="180dp"
+        android:layout_below="@id/theme_1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        app:srcCompat="@drawable/watching_youtube" />
+
+    <TextView
+        android:id="@+id/theme_3"
+        android:layout_width="360dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/theme_button_2"
+        android:layout_centerHorizontal="true"
+        android:text="Am I spending more time on Youtube than studying?"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:textStyle="italic" />
+
+     />
+
+
+</RelativeLayout>

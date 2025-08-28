@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background = "@drawable/validation_3">
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="360dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:text="How many data do you want to gather?"
+        android:textColor="#ffffff"
+        android:textSize="34dp" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="360dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/data_number_2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="(at least 30 is recommended for accuracy, but if you want a quick result, put under 30)"
+        android:textColor="#000000"
+        android:textSize="18dp"
+        android:textStyle = "bold"/>
+
+
+    <EditText
+        android:id="@+id/data_number_2"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/textView8"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:gravity="center" />
+
+    <ImageButton
+        android:id="@+id/randomButton"
+        android:layout_width="70dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/data_number_2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="130dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:src="@drawable/ic_nextppart" />
+
+
+
+</RelativeLayout>
